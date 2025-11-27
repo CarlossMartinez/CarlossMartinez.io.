@@ -18,7 +18,7 @@
     />
     <style>
       body {
-        background-color: black;
+        background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,36 +26,50 @@
         margin: 0;
       }
       .home-container {
-        max-width: 400px;
-        padding: 20px;
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+      }
+      .menu-section {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 15px;
       }
       .nav-icon {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
     </style>
   </head>
   <body>
-    <div class="home-container bg-secondary rounded text-light">
+    <div class="home-container bg-white shadow rounded">
       <!-- Nombre en la parte superior -->
-      <div class="text-center p-3 border-bottom">
+      <div class="text-center p-4 border-bottom">
         <h1>Carlos Martinez Serrano</h1>
       </div>
 
       <!-- Menú de navegación -->
-      <div class="d-flex flex-column p-3">
-        <a
-          href="./sections/sobre_mi.html"
-          class="btn btn-outline-secondary mb-3"
-        >
+      <div class="menu-section d-flex flex-column p-4">
+        <a href="./sections/sobre_mi.html" class="btn btn-outline-primary mb-4">
           <i class="bi bi-person nav-icon"></i> Sobre mí
         </a>
         <a
           href="./sections/experiencia.html"
-          class="btn btn-outline-secondary mb-3"
+          class="btn btn-outline-primary mb-4"
         >
           <i class="bi bi-briefcase nav-icon"></i> Experiencia
         </a>
-        <a href="./sections/titulos.html" class="btn btn-outline-secondary">
+        <a href="./sections/titulos.html" class="btn btn-outline-primary">
           <i class="bi bi-book nav-icon"></i> Historial Académico
         </a>
       </div>
